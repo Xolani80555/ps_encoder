@@ -74,14 +74,14 @@ def main():
                     sys.exit(1)
             else:
                 ps_script = open(script_file, 'r').read()
-                print powershell_encode(ps_script)
+                print "powershell -encodedCommand",powershell_encode(ps_script)
                 exit()
         
     else:
         while 1:
             try:
                 ps_script =  raw_input("ps_encoder$ ")
-                print(powershell_encode(ps_script))
+                # print(powershell_encode(ps_script))
                 print "powershell -encodedCommand",powershell_encode(ps_script)
             except KeyboardInterrupt:
                 exit("\nUser interrupt.")
