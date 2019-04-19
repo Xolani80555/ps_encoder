@@ -46,7 +46,6 @@ def powershell_encode(data):
 
 
 def usage():
-    print("Version: {0}".format(__version__))
     print("Usage: {0} <options>\n".format(sys.argv[0]))
     print("Enters interactive mode if no options provided.")
     print("Options:")
